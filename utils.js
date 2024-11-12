@@ -3,3 +3,5 @@ const randomize = (array) => {
 }
 
 module.exports = { randomize }
+
+//randomizes array function 

@@ -52,7 +52,7 @@ You will be accompanying 5 drovers as they drive 50 cattle to Old Red's Ranch fo
 The herd is made of up the following types of cattle:
 Ankole-Watusi,Brown Swiss,Brown Swiss,American Angus,Brown Swiss,
 Ankina,American Angus,Ankina,Brown Swiss,Ankole-Watusi,Brown Swiss,
-Brown Swiss,American Angus,Ankina,Ankole-Watusi,Brown Swiss,Brown Swiss,
+Brown Swiss,American Angus,Ankina,Ankole-Watusi,Brown Swiss,Brown Swiss,    // array
 Ankina,Brown Swiss,Ankina,Ankole-Watusi,Brown Swiss,Brown Swiss,
 Ankole-Watusi,American Angus,Brown Swiss,American Angus,Ankole-Watusi,
 Ankole-Watusi,American Angus,Ankina,Ankina,Ankina,Ankole-Watusi,
@@ -63,22 +63,22 @@ American Angus,Ankole-Watusi,Ankina,American Angus,Brown Swiss
 Here is the team of drovers you will be joining
         * Melvyn Hethron
         * Yancy Gresley
-        * Willabella Attarge
+        * Willabella Attarge     // array thats random
         * Ynes Gyenes
         * Farlie Spere
 
 
 Your journey will take you through the wildness of the American Midwest and across the following terrain
         * forest
-        * plain
+        * plain        // make this also random???
         * river
         * mountain
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > variable drovers is an array of objects that are randomly chosen using the math.random() function.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > drover is each object in the array drovers
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
    > Your public Loom URL here
 4. Also in the **journey** module, there is the following code:
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
-5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > areas.forests produces a random number between 1-3. So the string "forest" will be pushed into the journey array 1-3 times
+5. Explain the value of the `database` variable in the *database** module. Be as comprehensive as possible.
+   > database is an object that stores 2 arrays, that each contain objects.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > herdSize can be anything until I invoke the function and pass in an arguement. When I do invoke the function will pass through a variable which is cattleToDrive which has a value of int 50.
 
 ## When You Are Done
 
