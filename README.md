@@ -76,11 +76,17 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > variable drovers is an array of objects that are randomly chosen using the math.random() function.
+
+   > drovers is an iterated array of objects with a length of 5.
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > drover is each object in the array drovers
+
+   > drover will be each object in the already iterated array of 5 drover objects,
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > [Your public Loom URL here](https://www.loom.com/share/100e3f7b3d504218b3949bd2eaebe0ef?sid=a70a1740-5661-4ad7-851a-2652a8ca905f)
+
+   > [Your public Loom URL here](https://www.loom.com/share/6ae349362d144865a30640011755430d?sid=e543d9c3-284d-4910-893f-9bbe3da1e6de)
+
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +94,16 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > areas.forests produces a random number between 1-3. So the string "forest" will be pushed into the journey array 1-3 times
+
+   > We are setting a counting variable (forestNumber) to 0. While 0 is less than "areas.forests" (value of 1), we will increment "forestNumber" by 1 AND we will push the string "forest" into the array named journey. 
+
 5. Explain the value of the `database` variable in the *database** module. Be as comprehensive as possible.
-   > database is an object that stores 2 arrays, that each contain objects.
+
+   > database stores our cattle and drover information in one variable.
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > herdSize can be anything until I invoke the function and pass in an arguement. When I do invoke the function will pass through a variable which is cattleToDrive which has a value of int 50.
+
+   > herdSize is a place holder. It's expecting an int. When we call the function we will pass an int as an argument.
 
 ## When You Are Done
 
